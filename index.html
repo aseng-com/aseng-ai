@@ -601,7 +601,14 @@ html, body {
         </div>
     </div>
 </div>
-
+<script>
+function setVH() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+setVH();
+window.addEventListener('resize', setVH);
+</script>
 <script>
     // Konfigurasi
     const apiKey = "AIzaSyBF85ZOM_HPoUS9xNnk2OQWKo4ymruBisY"; // Ganti dengan API key Gemini Anda
